@@ -1,0 +1,59 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .welcome-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997, #51cf66, #94d82d, #fcc419, #ff922b);
+    background-size: 300% 300%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .overlay {
+    text-align: center;
+    color: white;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .welcome-image {
+    max-width: 35%;
+    height: auto;
+    margin-right: 2rem;
+  }
+  
+  .text-content {
+    text-align: left;
+  }
+  
+  .mt-4 {
+    margin-top: 1.5rem;
+  }
+  
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  
+  .mr-2 {
+    margin-right: 0.5rem;
+  }

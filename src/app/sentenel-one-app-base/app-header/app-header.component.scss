@@ -1,0 +1,91 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997, #51cf66, #94d82d, #fcc419, #ff922b);
+    background-size: 300% 300%;
+    animation: gradientAnimation 15s ease infinite;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    height: 60px; /* Adjust the height as needed */
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .left, .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .home-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+  }
+  
+  .site-title {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+  }
+  
+  .contact-link {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .theme-toggle {
+    margin-right: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .social-icon {
+    margin-left: 0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .social-icon.google {
+    color: #db4437; /* Google Red */
+  }
+  
+  .social-icon.facebook {
+    color: #3b5998; /* Facebook Blue */
+  }
+  
+  .social-icon.twitter {
+    color: #1da1f2; /* Twitter Blue */
+  }
+  
+  .social-icon.instagram {
+    color: #e1306c; /* Instagram Pink */
+  }
+  
+  .dropdown .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+  
+  .dropdown .dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .dropdown .dropdown-item {
+    color: #000;
+  }
+  
+  .dropdown .dropdown-item:hover {
+    background-color: #f8f9fa;
+  }
